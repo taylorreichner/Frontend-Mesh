@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
+
+  const getEventBriteFeed = async () => {
+    const res = await fetch `http://localhost:3001/`
+    
+    const req = await res.json()
+    
+
+    console.log(req)
+    return req;
+}
+  getEventBriteFeed()
+
   return (
     <div className="App">
       <header className="App-header">
