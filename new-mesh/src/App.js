@@ -1,18 +1,19 @@
 import './App.css';
-import { fetchEvents } from './Services/eventsApi';
+
 import Feed from './Containers/feed'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   
 
 
 
-fetchEvents()
-
   return (
-    <div>
-      <Feed />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path={'/'} element={<Feed />}/>
+      </Routes>
+    </Router>
   );
 }
 

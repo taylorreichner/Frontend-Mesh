@@ -4,14 +4,14 @@ import { fetchEvents } from '../Services/eventsApi';
 
 const Feed = () => {
     const [events, setEvents] = useState([])
-    console.log(events)
+    
     
 useEffect(() => {
     fetchEvents()
     .then(setEvents)
-    
 },[]);
-    
+
+  //  console.log(events, 'FEED')
     return (
         <>
         <EventList events={events}/>

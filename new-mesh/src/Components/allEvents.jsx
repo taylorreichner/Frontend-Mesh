@@ -9,14 +9,16 @@ const EventList = ({ events }) => {
             <SingleEvent {...event} />
         </li>
     ))
-
-   // console.log(eventItems)
+    
+       // console.log( 'event')
         
     return (
         <ul aria-label="event">
             {eventItems}
-
+            
         </ul>
+
+        
     )}
 
     EventList.propTypes = {
