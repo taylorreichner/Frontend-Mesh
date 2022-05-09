@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import EventList from '../Components/allEvents';
-import { fetchEvents } from '../Services/eventsApi';
-import styles from '../app'
+import React from 'react';
+import AuthNav from '../Components/auth-nav';
+import './signIn.css'
 
 const SignIn = () => {
  
-
   
     return (
         <>
-        <div>welcome to mesh</div>
-        <input></input>
-        <button>sign in</button>
+        <AuthNav />
         </>
     )
 

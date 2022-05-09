@@ -9,8 +9,8 @@ const EventList = ({ events }) => {
             <SingleEvent {...event} />
         </li>
     ))
-    
-       // console.log( 'event')
+      //  console.log(events, 'events')
+      //  console.log(eventItems, 'eventitems')
         
     return (
         <ul aria-label="event">

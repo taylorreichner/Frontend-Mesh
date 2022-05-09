@@ -11,7 +11,7 @@ const SingleEvent = ({id, title, url, date, host}) => {
         
     </div>
 
-  // console.log(id, title, url, host, date)
+  
  
     SingleEvent.propTypes = {
         id: PropTypes.string,
